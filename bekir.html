@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        #hitatek {
+            font-size: 155px;
+            color: lime;
+            text-transform: uppercase;
+            white-space: nowrap;
+            animation: pulse 2s alternate infinite;
+        }
+        #bekir-er {
+            font-size: 24px;
+            text-transform: uppercase;
+            white-space: nowrap;
+            animation: move 5s linear infinite, changeColor 3s linear infinite;
+        }
+        @keyframes move {
+            0% {
+                transform: translate(0, -20px);
+            }
+            100% {
+                transform: translate(0, 20px);
+            }
+        }
+        @keyframes changeColor {
+            0% {
+                color: #ff0000;
+            }
+            25% {
+                color: #00ff00;
+            }
+            50% {
+                color: #0000ff;
+            }
+            75% {
+                color: #ffff00;
+            }
+            100% {
+                color: #ff00ff;
+            }
+        }
+        @keyframes pulse {
+            0% {
+                font-size: 145px;
+            }
+            100% {
+                font-size: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="hitatek">HİTATEK</div>
+    <div id="bekir-er">BEKİR ER</div>
+</body>
+</html>
